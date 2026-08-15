@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS zones (zone_id INTEGER PRIMARY KEY CHECK(zone_id BETWEEN 1 AND 24), crop_type TEXT, growth_stage TEXT, soil_type TEXT, zone_area_m2 REAL);
+CREATE TABLE IF NOT EXISTS sensor_readings (id INTEGER PRIMARY KEY, zone_id INTEGER NOT NULL, timestamp TEXT NOT NULL, soil_moisture REAL, temperature REAL, humidity REAL, flow_rate REAL, total_liters REAL, FOREIGN KEY(zone_id) REFERENCES zones(zone_id));
+CREATE TABLE IF NOT EXISTS irrigation_events (id INTEGER PRIMARY KEY, zone_id INTEGER NOT NULL, start_time TEXT NOT NULL, end_time TEXT, target_liters REAL NOT NULL, actual_liters REAL, status TEXT NOT NULL, FOREIGN KEY(zone_id) REFERENCES zones(zone_id));
+CREATE TABLE IF NOT EXISTS system_events (id INTEGER PRIMARY KEY, timestamp TEXT NOT NULL, level TEXT NOT NULL, message TEXT NOT NULL, zone_id INTEGER);

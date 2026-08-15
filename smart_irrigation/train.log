@@ -1,0 +1,224 @@
+Generated research-informed crop-specific data; source: FAO Crop water needs: https://www.fao.org/4/s2022e/s2022e07.htm
+C:\Users\Ahmed Salah\Desktop\private MO\programming\projects\gen projects\hackathon proj\smart_irrigation\.vendor\joblib\externals\loky\backend\context.py:131: UserWarning: Could not find the number of physical cores for the following reason:
+[WinError 2] The system cannot find the file specified
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "C:\Users\Ahmed Salah\Desktop\private MO\programming\projects\gen projects\hackathon proj\smart_irrigation\.vendor\joblib\externals\loky\backend\context.py", line 247, in _count_physical_cores
+    cpu_count_physical = _count_physical_cores_win32()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ahmed Salah\Desktop\private MO\programming\projects\gen projects\hackathon proj\smart_irrigation\.vendor\joblib\externals\loky\backend\context.py", line 299, in _count_physical_cores_win32
+    cpu_info = subprocess.run(
+               ^^^^^^^^^^^^^^^
+  File "C:\Users\Ahmed Salah\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ahmed Salah\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Ahmed Salah\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+{
+  "crop": "tomato",
+  "model_type": "hist_gradient_boosting",
+  "synthetic_data": true,
+  "training_samples": 8400,
+  "validation_samples": 1800,
+  "test_samples": 1800,
+  "features": [
+    "soil_moisture_pct",
+    "temperature_c",
+    "humidity_pct",
+    "flow_rate_lpm",
+    "growth_stage",
+    "soil_type",
+    "recent_irrigation_l"
+  ],
+  "feature_order": [
+    "soil_moisture_pct",
+    "temperature_c",
+    "humidity_pct",
+    "flow_rate_lpm",
+    "growth_stage",
+    "soil_type",
+    "recent_irrigation_l"
+  ],
+  "target": "irrigation_required",
+  "accuracy": 0.9988888888888889,
+  "precision": 1.0,
+  "recall": 0.972972972972973,
+  "f1": 0.9863013698630136,
+  "confusion_matrix": [
+    [
+      1726,
+      0
+    ],
+    [
+      2,
+      72
+    ]
+  ]
+}
+{
+  "crop": "potato",
+  "model_type": "hist_gradient_boosting",
+  "synthetic_data": true,
+  "training_samples": 8400,
+  "validation_samples": 1800,
+  "test_samples": 1800,
+  "features": [
+    "soil_moisture_pct",
+    "temperature_c",
+    "humidity_pct",
+    "flow_rate_lpm",
+    "growth_stage",
+    "soil_type",
+    "recent_irrigation_l"
+  ],
+  "feature_order": [
+    "soil_moisture_pct",
+    "temperature_c",
+    "humidity_pct",
+    "flow_rate_lpm",
+    "growth_stage",
+    "soil_type",
+    "recent_irrigation_l"
+  ],
+  "target": "irrigation_required",
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "confusion_matrix": [
+    [
+      1733,
+      0
+    ],
+    [
+      0,
+      67
+    ]
+  ]
+}
+{
+  "crop": "cucumber",
+  "model_type": "random_forest",
+  "synthetic_data": true,
+  "training_samples": 8400,
+  "validation_samples": 1800,
+  "test_samples": 1800,
+  "features": [
+    "soil_moisture_pct",
+    "temperature_c",
+    "humidity_pct",
+    "flow_rate_lpm",
+    "growth_stage",
+    "soil_type",
+    "recent_irrigation_l"
+  ],
+  "feature_order": [
+    "soil_moisture_pct",
+    "temperature_c",
+    "humidity_pct",
+    "flow_rate_lpm",
+    "growth_stage",
+    "soil_type",
+    "recent_irrigation_l"
+  ],
+  "target": "irrigation_required",
+  "accuracy": 0.9988888888888889,
+  "precision": 0.9888888888888889,
+  "recall": 0.9888888888888889,
+  "f1": 0.9888888888888889,
+  "confusion_matrix": [
+    [
+      1709,
+      1
+    ],
+    [
+      1,
+      89
+    ]
+  ]
+}
+{
+  "crop": "pepper",
+  "model_type": "hist_gradient_boosting",
+  "synthetic_data": true,
+  "training_samples": 8400,
+  "validation_samples": 1800,
+  "test_samples": 1800,
+  "features": [
+    "soil_moisture_pct",
+    "temperature_c",
+    "humidity_pct",
+    "flow_rate_lpm",
+    "growth_stage",
+    "soil_type",
+    "recent_irrigation_l"
+  ],
+  "feature_order": [
+    "soil_moisture_pct",
+    "temperature_c",
+    "humidity_pct",
+    "flow_rate_lpm",
+    "growth_stage",
+    "soil_type",
+    "recent_irrigation_l"
+  ],
+  "target": "irrigation_required",
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "confusion_matrix": [
+    [
+      1734,
+      0
+    ],
+    [
+      0,
+      66
+    ]
+  ]
+}
+{
+  "crop": "onion",
+  "model_type": "hist_gradient_boosting",
+  "synthetic_data": true,
+  "training_samples": 8400,
+  "validation_samples": 1800,
+  "test_samples": 1800,
+  "features": [
+    "soil_moisture_pct",
+    "temperature_c",
+    "humidity_pct",
+    "flow_rate_lpm",
+    "growth_stage",
+    "soil_type",
+    "recent_irrigation_l"
+  ],
+  "feature_order": [
+    "soil_moisture_pct",
+    "temperature_c",
+    "humidity_pct",
+    "flow_rate_lpm",
+    "growth_stage",
+    "soil_type",
+    "recent_irrigation_l"
+  ],
+  "target": "irrigation_required",
+  "accuracy": 0.9994444444444445,
+  "precision": 1.0,
+  "recall": 0.9871794871794872,
+  "f1": 0.9935483870967742,
+  "confusion_matrix": [
+    [
+      1722,
+      0
+    ],
+    [
+      1,
+      77
+    ]
+  ]
+}

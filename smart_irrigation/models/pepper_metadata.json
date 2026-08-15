@@ -1,0 +1,41 @@
+{
+  "crop": "pepper",
+  "model_type": "hist_gradient_boosting",
+  "synthetic_data": true,
+  "training_samples": 8400,
+  "validation_samples": 1800,
+  "test_samples": 1800,
+  "features": [
+    "soil_moisture_pct",
+    "temperature_c",
+    "humidity_pct",
+    "flow_rate_lpm",
+    "growth_stage",
+    "soil_type",
+    "recent_irrigation_l"
+  ],
+  "feature_order": [
+    "soil_moisture_pct",
+    "temperature_c",
+    "humidity_pct",
+    "flow_rate_lpm",
+    "growth_stage",
+    "soil_type",
+    "recent_irrigation_l"
+  ],
+  "target": "irrigation_required",
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "confusion_matrix": [
+    [
+      1734,
+      0
+    ],
+    [
+      0,
+      66
+    ]
+  ]
+}

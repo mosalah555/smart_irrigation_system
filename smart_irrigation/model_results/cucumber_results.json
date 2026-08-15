@@ -1,0 +1,41 @@
+{
+  "crop": "cucumber",
+  "model_type": "random_forest",
+  "synthetic_data": true,
+  "training_samples": 8400,
+  "validation_samples": 1800,
+  "test_samples": 1800,
+  "features": [
+    "soil_moisture_pct",
+    "temperature_c",
+    "humidity_pct",
+    "flow_rate_lpm",
+    "growth_stage",
+    "soil_type",
+    "recent_irrigation_l"
+  ],
+  "feature_order": [
+    "soil_moisture_pct",
+    "temperature_c",
+    "humidity_pct",
+    "flow_rate_lpm",
+    "growth_stage",
+    "soil_type",
+    "recent_irrigation_l"
+  ],
+  "target": "irrigation_required",
+  "accuracy": 0.9988888888888889,
+  "precision": 0.9888888888888889,
+  "recall": 0.9888888888888889,
+  "f1": 0.9888888888888889,
+  "confusion_matrix": [
+    [
+      1709,
+      1
+    ],
+    [
+      1,
+      89
+    ]
+  ]
+}
